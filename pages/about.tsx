@@ -1,8 +1,13 @@
-import Link from 'next/link'
-import styles from '../styles/Home.module.css'
-import { PageLayout } from '@c/PageLayout'
+import React from 'react';
 
-export default function About () {
+import Link from 'next/link';
+
+import { PageLayout } from '@c/PageLayout';
+import styles from '../styles/Home.module.css';
+
+export interface AboutInterface {}
+
+const About: React.FC<AboutInterface> = () => {
   return (
     <PageLayout title='News-App: About'>
       <div className={styles.container}>
@@ -11,4 +16,6 @@ export default function About () {
       </div>
     </PageLayout>
   )
-}
+};
+
+export default About;
