@@ -1,13 +1,13 @@
 .container {
-  display: grid;
+  /* display: grid;
   place-content: center;
-  height: 90vh;
+  height: 90vh; */
   padding: 0 2rem;
 }
 
 .header {
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: space-between;
   height: 10vh;
-  padding: 0 2rem;
+  padding: 20px;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import styles from '../../styles/Home.module.css'
+import Link from "next/link";
 
 export interface PageLayoutInterface {
   title?: string
@@ -18,7 +19,14 @@ const PageLayout: React.FC<PageLayoutInterface> = ({ children, title='News-App' 
         <title>{title}</title>
       </Head>
       <header className={styles.header}>
-        🗞️ News App
+        <div>
+          <Link href='/'>
+            🗞️ News App
+          </Link>
+        </div>
+        <div>
+          <Link href='/about'>About</Link>
+        </div>
       </header>
       <main>
         {children}

@@ -3,9 +3,9 @@ import React from "react";
 export interface MainLayoutInterface {}
 
 const MainLayout: React.FC<MainLayoutInterface> = () => {
-    return (
-        <></>
-    )
+  return (
+    <></>
+  )
 };
 
 export default MainLayout;
